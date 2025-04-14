@@ -6,7 +6,7 @@ Illustrate ladder operator for 1D harmonic quantum oscillators.
 \hat{H}\psi=E\psi
 ```
 
-With natural units,
+With natural units and $\omega=1$,
 ``` math
 \hat{p}=-i\frac{d}{dx}
 ```
