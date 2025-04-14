@@ -53,7 +53,9 @@ class HarmonicOscillator:
         if n not in self.reference_table:
             self.reference_table[n]=self
         print(f"Harmonic Oscillator {n} Calculated.")
-        
+    
+    def __str__(self):
+        return str(self.psi)
     
     def evaluate(self, x1):
         return self.psi.subs(self.x, x1).evalf()
@@ -87,13 +89,13 @@ class HarmonicOscillator:
     
     def E(self):
         HE=-sympy.diff(sympy.diff(self.psi, self.x), self.x)/2+self.x**2*self.psi/2
-        print(HE)
         return HarmonicOscillator._norm(HE, self.x)/HarmonicOscillator._norm(self.psi, self.x)
 
 
     
 if __name__=='__main__':
     h7= HarmonicOscillator(7)
+    print(h7)
     print(h7.E())
     h7.plot_pdf('7.pdf')
 
