@@ -50,7 +50,8 @@ class HarmonicOscillator:
             self.psi=psi2
             self.x=x2
         self.psi=sympy.simplify(self.psi)
-        self.reference_table[n]=self
+        if n not in self.reference_table:
+            self.reference_table[n]=self
         print(f"Harmonic Oscillator {n} Calculated.")
         
     
