@@ -2,6 +2,10 @@
 
 Illustrate ladder operator for 1D harmonic quantum oscillators.
 
+``` math
+\hat{H}\psi=E\psi
+```
+
 # Install requirements
 ``` bash
 pip install -r requirements.txt
