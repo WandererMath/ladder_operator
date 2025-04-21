@@ -43,7 +43,7 @@ oscillator.plot_pdf("filename.pdf")
 
 To calculate the energy by 
 ```math
-E=\frac{\int_{-\infty}^{\infty} \hat{H}\psi~ dx}{\int_{-\infty}^{\infty} \psi ~dx}, 
+E=\frac{\int_{-\infty}^{\infty} \hat{H}\psi~ dx}{\int_{-\infty}^{\infty} \psi ~dx}
 ```
 as a verification:
 ``` python
